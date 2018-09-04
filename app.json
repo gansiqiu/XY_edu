@@ -1,0 +1,43 @@
+{
+   "pages": [
+      "pages/curriculum/curriculum",
+      "pages/pieceShare/pieceShare",
+      "pages/search/search",
+      "pages/Myinfo/Myinfo"
+   ],
+   "window": {
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#fff",
+      "navigationBarTitleText": "心一教育",
+      "backgroundColor": "#eeeeee",
+      "navigationBarTextStyle": "black"
+   },
+   "tabBar": {
+      "list": [
+         {
+            "pagePath": "pages/curriculum/curriculum",
+            "text": "课程",
+            "iconPath": "images/curriculum.png",
+            "selectedIconPath": "images/curriculum_h.png"
+         },
+         {
+            "pagePath": "pages/pieceShare/pieceShare",
+            "text": "好文分享",
+            "iconPath": "images/share.png",
+            "selectedIconPath": "images/share_h.png"
+         },
+         {
+            "pagePath": "pages/search/search",
+            "text": "搜索",
+            "iconPath": "images/search.png",
+            "selectedIconPath": "images/search_h.png"
+         },
+         {
+            "pagePath": "pages/Myinfo/Myinfo",
+            "text": "我的",
+            "iconPath": "images/user.png",
+            "selectedIconPath": "images/user_h.png"
+         }
+      ]
+   }
+}

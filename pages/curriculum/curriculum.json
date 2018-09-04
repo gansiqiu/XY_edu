@@ -1,0 +1,8 @@
+{
+   "usingComponents": {
+      "wxc-input": "/@minui/wxc-input/dist/index",
+      "i-tabs": "/dist/tabs/index",
+      "i-tab": "/dist/tab/index",
+      "i-spin": "/dist/spin/index"
+   }
+}

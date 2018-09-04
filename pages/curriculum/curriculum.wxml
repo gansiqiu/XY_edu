@@ -1,0 +1,5 @@
+<!--pages/curriculum/curriculum.wxml-->
+   <i-tabs current="{{currentTab}}" bindchange="handleChange">
+      <i-tab key="0" title="精品课程"></i-tab>
+      <i-tab key="1" title="专题突破"></i-tab>
+   </i-tabs>
