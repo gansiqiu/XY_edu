@@ -22,15 +22,15 @@
 }
 
 .i-card-header-content {
-   flex: 1;
+   flex: 2;
    text-align: left;
    height: auto;
 }
 
 .i-card-header-thumb {
    display: inline-block;
-   width: 64px;
-   height: 64px;
+   width: 100px;
+   height: 70px;
    position: relative;
    margin-left: auto;
    margin-right: auto;

@@ -1,5 +1,88 @@
 <!--pages/curriculum/curriculum.wxml-->
+<view>
    <i-tabs current="{{currentTab}}" bindchange="handleChange">
       <i-tab key="0" title="精品课程"></i-tab>
       <i-tab key="1" title="专题突破"></i-tab>
    </i-tabs>
+   <swiper current="{{currentTab}}" bindchange="bindchange" style="text-align:center;height:{{autoHeight}}rpx;">
+      <swiper-item class="swiperItem">
+         <view>
+            <view class='item_header'>
+               <i-avatar src="/images/fire.png" size="small"></i-avatar>
+               <text class='class_name'>七年级</text>
+            </view>
+            <view>
+               <view class='LX_class' data-class-id='1' data-class-title='七年级·领先课堂' catchtap='catchtap'>
+                  <i-card title="领先课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+               <view class='PY_class' data-class-id='2' data-class-title='七年级·培优课堂' catchtap='catchtap'>
+                  <i-card title="培优课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+               <view class='HZ_class' data-class-id='3' data-class-title='七年级·汇智课堂' catchtap='catchtap'>
+                  <i-card title="汇智课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+            </view>
+         </view>
+         <view>
+            <view class='item_header'>
+               <i-avatar src="/images/fire.png" size="small"></i-avatar>
+               <text class='class_name'>八年级</text>
+            </view>
+            <view>
+               <view class='LX_class' data-class-id='4' data-class-title='八年级·领先课堂' catchtap='catchtap'>
+                  <i-card title="领先课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+               <view class='PY_class' data-class-id='5' data-class-title='八年级·培优课堂' catchtap='catchtap'>
+                  <i-card title="培优课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+               <view class='HZ_class' data-class-id='6' data-class-title='八年级·汇智课堂' catchtap='catchtap'>
+                  <i-card title="汇智课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+            </view>
+         </view>
+         <view>
+            <view class='item_header'>
+               <i-avatar src="/images/fire.png" size="small"></i-avatar>
+               <text class='class_name'>九年级</text>
+            </view>
+            <view>
+               <view class='LX_class' data-class-id='7' data-class-title='九年级·领先课堂' catchtap='catchtap'>
+                  <i-card title="领先课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+               <view class='PY_class' data-class-id='8' data-class-title='九年级·培优课堂' catchtap='catchtap'>
+                  <i-card title="培优课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+               <view class='HZ_class' data-class-id='9' data-class-title='九年级·汇智课堂' catchtap='catchtap'>
+                  <i-card title="汇智课堂" extra="额外内容" thumb="/images/eg.jpg">
+                  </i-card>
+               </view>
+            </view>
+         </view>
+   
+      </swiper-item>
+      <swiper-item class="swiperItem">
+         <view>
+            <view class='LX_class' data-class-id='10' data-class-title='计算专题' catchtap='catchtap'>
+               <i-card title="计算专题" extra="额外内容" thumb="/images/eg.jpg">
+               </i-card>
+            </view>
+            <view class='PY_class' data-class-id='11' data-class-title='几何专题' catchtap='catchtap'>
+               <i-card title="几何专题" extra="额外内容" thumb="/images/eg.jpg">
+               </i-card>
+            </view>
+            <view class='HZ_class' data-class-id='12' data-class-title='压轴题专题' catchtap='catchtap'>
+               <i-card title="压轴题专题" extra="额外内容" thumb="/images/eg.jpg">
+               </i-card>
+            </view>
+         </view>
+      </swiper-item>
+   </swiper>
+</view>

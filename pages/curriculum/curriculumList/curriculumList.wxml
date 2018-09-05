@@ -1,5 +1,5 @@
-<!--pages/pieceShare/pieceShare.wxml-->
-<view class='poece_list' wx:for="{{dataList}}" wx:for-item="item" >
+<!--pages/curriculum/curriculumList/curriculumList.wxml-->
+<view class='curriculum_list' wx:for="{{dataList}}" wx:for-item="item" >
    <i-cell-group>
       <i-cell title="{{item.title}}" is-link  data-id="{{item.id}}" bind:click="clickClass">
          <view slot="icon">

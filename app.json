@@ -1,15 +1,16 @@
 {
    "pages": [
       "pages/curriculum/curriculum",
+      "pages/curriculum/curriculumList/curriculumList",
       "pages/pieceShare/pieceShare",
       "pages/search/search",
       "pages/Myinfo/Myinfo"
    ],
    "window": {
-      "backgroundTextStyle": "light",
-      "navigationBarBackgroundColor": "#fff",
+      "backgroundTextStyle": "black",
+      "navigationBarBackgroundColor": "#ffffff",
       "navigationBarTitleText": "心一教育",
-      "backgroundColor": "#eeeeee",
+      "backgroundColor": "#f8f8f9",
       "navigationBarTextStyle": "black"
    },
    "tabBar": {

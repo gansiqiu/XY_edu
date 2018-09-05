@@ -5,13 +5,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-     currentTab:"0"
+     currentTab:"0",
+     dataList:[],
+     autoHeight: 2400
   },
    handleChange:function(event){
       this.setData({
          currentTab: event.detail.key
+      });
+      if (event.detail.key == "0"){
+         this.setData({
+            autoHeight: 2400
+         });
+      }else{
+         this.setData({
+            currentTab: 1020
+         });
+      }
+   },
+   bindchange:function(event){
+      this.setData({
+         currentTab: event.detail.current,
+      });
+      if (event.detail.current == "0"){
+         this.setData({
+            autoHeight: 2400
+         });
+      }else{
+         this.setData({
+            autoHeight: 1020
+         });
+      }
+   },
+   catchtap:function(event){
+      console.log(event.currentTarget.dataset.classId);
+      wx.navigateTo({
+         url: '/pages/curriculum/curriculumList/curriculumList?classId=' + event.currentTarget.dataset.classId +
+               "&classTitle=" + event.currentTarget.dataset.classTitle,
       })
    },
+
 
   /**
    * 生命周期函数--监听页面加载

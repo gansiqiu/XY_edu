@@ -1,5 +1,7 @@
 {
    "usingComponents": {
+      "wxc-list": "/@minui/wxc-list/dist/index",
+      "wxc-icon": "/@minui/wxc-icon/dist/index",
       "i-cell-group": "/dist/cell-group/index",
       "i-cell": "/dist/cell/index",
       "i-icon": "/dist/icon/index"

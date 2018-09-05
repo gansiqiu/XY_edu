@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+     dataList: [
+        { id: 1, title: "好文分享1", image: "/images/eg2.jpg" }, { id: 2, title: "好文分享2", image: "/images/eg2.jpg" }, 
+        { id: 3, title: "好文分享3", image: "/images/eg2.jpg" }, { id: 4, title: "好文分享4", image: "/images/eg2.jpg" },
+        { id: 5, title: "好文分享5", image: "/images/eg2.jpg" }, { id: 6, title: "好文分享6", image: "/images/eg2.jpg" },
+        { id: 7, title: "好文分享7", image: "/images/eg2.jpg" }, { id: 8, title: "好文分享8", image: "/images/eg2.jpg" },
+        { id: 9, title: "好文分享9", image: "/images/eg2.jpg" }, { id: 10, title: "好文分享10", image: "/images/eg2.jpg" },
+        { id: 11, title: "好文分享11", image: "/images/eg2.jpg" }, { id: 12, title: "好文分享12", image: "/images/eg2.jpg" }
+     ]
   },
 
   /**

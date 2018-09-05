@@ -1,1 +1,18 @@
 /* pages/curriculum/curriculum.wxss */
+.swiperItem{
+   width: 750rpx;
+   display: flex;
+   flex-direction: column;
+   text-align: left;
+}
+.item_header{
+   margin: 30rpx;
+}
+.class_name{
+   margin-left: 10rpx;
+   font-size: 16px;
+   color: #1c2438;
+}
+.LX_class, .PY_class, .HZ_class{
+   margin: 10rpx auto;
+}
