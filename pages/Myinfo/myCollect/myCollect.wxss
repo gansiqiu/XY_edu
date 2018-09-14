@@ -1,5 +1,4 @@
-/* pages/curriculum/curriculumList/curriculumList.wxss */
-
+/* pages/Myinfo/myCollect/myCollect.wxss */
 .curriculum_list {
     margin: 10rpx 20rpx;
     border-radius: 10px;

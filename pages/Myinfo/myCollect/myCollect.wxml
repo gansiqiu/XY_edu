@@ -1,0 +1,31 @@
+<!--pages/Myinfo/myCollect/myCollect.wxml-->
+<view>
+    <i-tabs current="{{ currentTab }}" bindchange="handleChange">
+        <i-tab key="0" title="课程"></i-tab>
+        <i-tab key="1" title="好文"></i-tab>
+    </i-tabs>
+    <swiper current="{{currentTab}}" bindchange="bindchange" style="text-align:center;height:{{autoHeight}}rpx;">
+        <swiper-item class="swiperItem">
+            <view class='curriculum_list' wx:for="{{dataList}}" wx:for-item="item">
+                <i-cell-group>
+                    <i-cell title="{{item.title}}" is-link data-id="{{item.id}}" data-title="{{item.title}}" data-class-type="{{item.classType}}" bind:click="clickClass">
+                        <view slot="icon">
+                            <image class='icon_image' src='{{item.image}}'></image>
+                        </view>
+                    </i-cell>
+                </i-cell-group>
+            </view>
+        </swiper-item>
+        <swiper-item class="swiperItem">
+            <view class='curriculum_list' wx:for="{{dataList}}" wx:for-item="item">
+                <i-cell-group>
+                    <i-cell title="{{item.title}}" is-link data-id="{{item.id}}" data-class-type="{{item.classType}}" data-title="{{item.title}}" bind:click="clickClass">
+                        <view slot="icon">
+                            <image class='icon_image' src='{{item.image}}'></image>
+                        </view>
+                    </i-cell>
+                </i-cell-group>
+            </view>
+        </swiper-item>
+    </swiper>
+</view>

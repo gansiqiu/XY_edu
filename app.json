@@ -2,9 +2,12 @@
    "pages": [
       "pages/curriculum/curriculum",
       "pages/curriculum/curriculumList/curriculumList",
+      "pages/curriculum/curriculumDetail/curriculumDetail",
+      "pages/pieceShare/pieceShareDetail/pieceShareDetail",
       "pages/pieceShare/pieceShare",
       "pages/search/search",
-      "pages/Myinfo/Myinfo"
+      "pages/Myinfo/Myinfo",
+      "pages/Myinfo/myCollect/myCollect"
    ],
    "window": {
       "backgroundTextStyle": "black",

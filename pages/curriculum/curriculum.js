@@ -19,13 +19,13 @@ Page({
          });
       }else{
          this.setData({
-            currentTab: 1020
+             autoHeight: 1020
          });
-      }
+       }
    },
    bindchange:function(event){
       this.setData({
-         currentTab: event.detail.current,
+         currentTab: event.detail.current
       });
       if (event.detail.current == "0"){
          this.setData({
@@ -38,7 +38,6 @@ Page({
       }
    },
    catchtap:function(event){
-      console.log(event.currentTarget.dataset.classId);
       wx.navigateTo({
          url: '/pages/curriculum/curriculumList/curriculumList?classId=' + event.currentTarget.dataset.classId +
                "&classTitle=" + event.currentTarget.dataset.classTitle,

@@ -1,0 +1,20 @@
+<!--pages/curriculum/curriculumDetail/curriculumDetail.wxml-->
+<view>
+   <video class='video' src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+      page-gesture="true">
+   </video>
+   <view class='content_view'>
+      <text class='classType'>{{classType}}</text>
+      <view class='share_collect'>
+         <view class='share'>
+            <image class='iconImg' src='/images/shareIcon.png'></image>
+            <button class='text' open-type='share'>分享</button>
+         </view>
+         <view class='collect' catchtap='collectTap'>
+            <image class='iconImg' src='{{collectFlag ? "/images/collectIcon_h.png" : "/images/collectIcon.png"}}'></image>
+            <button class='text'>{{collectFlag ? "取消收藏" : "收藏"}}</button>
+         </view>
+      </view>
+      <i-divider class="divider">视频介绍</i-divider>
+   </view>
+</view>

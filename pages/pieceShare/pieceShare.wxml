@@ -1,10 +1,44 @@
 <!--pages/pieceShare/pieceShare.wxml-->
-<view class='poece_list' wx:for="{{dataList}}" wx:for-item="item" >
-   <i-cell-group>
-      <i-cell title="{{item.title}}" is-link  data-id="{{item.id}}" bind:click="clickClass">
-         <view slot="icon">
-            <image class='icon_image' src='{{item.image}}'></image>
+<view>
+   <i-tabs current="{{currentTab}}" bindchange="handleChange">
+      <i-tab key="0" title="父子篇"></i-tab>
+      <i-tab key="1" title="成长篇"></i-tab>
+      <i-tab key="2" title="亲子篇"></i-tab>
+   </i-tabs>
+   <swiper current="{{currentTab}}" bindchange="bindchange" style="text-align:center;height:{{autoHeight}}rpx;">
+      <swiper-item class="swiperItem">
+         <view class='poece_list' wx:for="{{dataList}}" wx:for-item="item">
+            <i-cell-group>
+               <i-cell title="{{item.title}}" is-link data-id="{{item.id}}" bind:click="clickClass">
+                  <view slot="icon">
+                     <image class='icon_image' src='{{item.image}}'></image>
+                  </view>
+               </i-cell>
+            </i-cell-group>
          </view>
-      </i-cell>
-   </i-cell-group>
+      </swiper-item>
+      <swiper-item class="swiperItem">
+         <view class='poece_list' wx:for="{{dataList}}" wx:for-item="item">
+            <i-cell-group>
+               <i-cell title="{{item.title}}" is-link data-id="{{item.id}}" bind:click="clickClass">
+                  <view slot="icon">
+                     <image class='icon_image' src='{{item.image}}'></image>
+                  </view>
+               </i-cell>
+            </i-cell-group>
+         </view>
+      </swiper-item>
+      <swiper-item class="swiperItem">
+         <view class='poece_list' wx:for="{{dataList}}" wx:for-item="item">
+            <i-cell-group>
+               <i-cell title="{{item.title}}" is-link data-id="{{item.id}}" bind:click="clickClass">
+                  <view slot="icon">
+                     <image class='icon_image' src='{{item.image}}'></image>
+                  </view>
+               </i-cell>
+            </i-cell-group>
+         </view>
+      </swiper-item>
+   </swiper>
+
 </view>

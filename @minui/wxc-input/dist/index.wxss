@@ -1,4 +1,6 @@
-.input {}
+.input {
+   background: #fff
+}
 .input__combine {
     position: relative;
     display: flex;

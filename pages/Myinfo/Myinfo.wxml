@@ -1,2 +1,16 @@
 <!--pages/Myinfo/Myinfo.wxml-->
-<text>pages/Myinfo/Myinfo.wxml</text>
+<view class="list-wrap">
+   <view class="index_user">
+      <button plain='true' wx:if='{{shouquan == 0}}' class='userinfo_btn' open-type='getUserInfo' bindgetuserinfo='userInfoHandler'></button>
+      <image class='user_icon' wx:if='{{shouquan == 0}}' src='/images/click_author.png'></image>
+      <image class='user_icon' wx:else src="{{headimgurl}}"></image>
+      <view wx:if='{{shouquan == 1}}'>{{nickname}}</view>
+      <view wx:if='{{shouquan == 0}}'>游客用户</view>
+   </view>
+
+   <view class="list-item">
+      <wxc-list class="item" icon="scan" icon-color="#69A0DD" title="扫一扫" bind:click="scanClick"></wxc-list>
+      <wxc-list class="item" icon="footprint" icon-color="#69A0DD" title="清除缓存" bind:click="clearStorageClick"></wxc-list>
+      <wxc-list class="item" icon="star" icon-color="#69A0DD" title="我的收藏" bind:click="myCollect"></wxc-list>
+   </view>
+</view>

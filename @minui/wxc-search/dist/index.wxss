@@ -52,8 +52,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 40rpx;
-    height: 60rpx
+    width: 60rpx;
+    height: 60rpx;
+    z-index: 999;
 }
   .search__button {
     width: 120rpx;

@@ -1,1 +1,8 @@
-{}
+{
+   "usingComponents": {
+      "wxc-list": "/@minui/wxc-list/dist/index",
+      "wxc-button": "/@minui/wxc-button/dist/index",
+      "wxc-icon": "/@minui/wxc-icon/dist/index",
+      "wxc-avatar": "/@minui/wxc-avatar/dist/index"
+   }
+}

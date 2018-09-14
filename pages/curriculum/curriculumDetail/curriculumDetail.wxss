@@ -1,0 +1,48 @@
+/* pages/curriculum/curriculumDetail/curriculumDetail.wxss */
+
+.video {
+   width: 100%;
+}
+
+.content_view {
+   display: flex;
+   flex-direction: column;
+}
+
+.classType{
+   font-size: 30rpx;
+   color: #808695;
+   margin-top: 10rpx ;
+   margin-left: 20rpx;
+}
+
+.share_collect {
+   display: flex;
+   flex-direction: row;
+}
+
+.share, .collect {
+   padding: 20rpx 0rpx;
+   margin-left: 32rpx;
+   display: flex;
+   flex-direction: row;
+}
+
+.iconImg {
+   width: 50rpx;
+   height: 50rpx;
+}
+
+.text {
+   color: #808695;
+   font-size: 28rpx;
+   width: 120rpx;
+   height: 60rpx;
+   line-height: 60rpx;
+   padding: 0rpx;
+   margin-top: -6rpx;
+}
+
+.i-divider-content {
+   font-size: 20px;
+}

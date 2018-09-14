@@ -1,1 +1,41 @@
 /* pages/search/search.wxss */
+
+.input-wrap {
+   position: relative;
+   margin: 30rpx 150rpx 30rpx 10rpx;
+}
+
+.search {
+   flex: 1;
+   margin-left: 24rpx;
+}
+
+.searchBtn {
+   position: absolute;
+   width: 120rpx;
+   height: 80rpx;
+   font-size: 30rpx;
+   right: -130rpx;
+   top: 5rpx;
+}
+
+.search_list {
+   margin: 10rpx 20rpx;
+   border-radius: 10px;
+}
+
+.icon_image {
+   width: 120rpx;
+   height: 70rpx;
+}
+
+.storageBtn {
+   float: left;
+}
+
+.clear {
+   position: absolute;
+   top: 36rpx;
+   right: 40rpx;
+   z-index: 999;
+}

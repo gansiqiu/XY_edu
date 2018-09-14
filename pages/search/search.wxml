@@ -1,2 +1,27 @@
 <!--pages/search/search.wxml-->
-<text>pages/search/search.wxml</text>
+<view>
+   <view class="input-wrap">
+      <wxc-input type="text" icon="search" mode="wrapped" value='{{searchValue}}' confirm-type="search" placeholder="搜索课程" bind:confirm="bindConfirmr" bind:input="bindInput"></wxc-input>
+      <icon class='clear' wx:if="{{searchValue.length}}" type="clear" size="14" color="#ccc" catchtap='clearTap'/>
+      <button class='searchBtn' catchtap='searchTap'>搜索</button>
+   </view>
+   <view class='search_list' wx:if="{{searchCursor}}" wx:for="{{dataList}}" wx:for-item="item">
+      <i-cell-group>
+         <i-cell title="{{item.title}}" is-link data-id="{{item.id}}" data-title="{{item.title}}" data-class-type="{{item.classType}}"bind:click="clickClass">
+            <view slot="icon">
+               <image class='icon_image' src='{{item.image}}'></image>
+            </view>
+         </i-cell>
+      </i-cell-group>
+   </view>
+   <i-divider class="divider">搜索历史</i-divider>
+   <view>
+      <block wx:for="{{storageData}}" wx:for-item="item">
+         <i-button class='storageBtn' data-storage-value='{{item}}' bind:click="handleClick" type="ghost" size="small">{{item}}</i-button>
+      </block>
+   </view>
+   <i-divider wx:if="{{storageData.length}}" class="divider">清除历史记录</i-divider>
+   <view  wx:if="{{storageData.length}}">
+      <i-button  class='storageBtn' bind:click="clearStorage" type="ghost" size="small">清除</i-button>
+   </view>
+</view>

@@ -1,7 +1,7 @@
 <!--pages/curriculum/curriculumList/curriculumList.wxml-->
 <view class='curriculum_list' wx:for="{{dataList}}" wx:for-item="item" >
    <i-cell-group>
-      <i-cell title="{{item.title}}" is-link  data-id="{{item.id}}" bind:click="clickClass">
+      <i-cell title="{{item.title}}" is-link  data-id="{{item.id}}" data-title="{{item.title}}" bind:click="clickClass">
          <view slot="icon">
             <image class='icon_image' src='{{item.image}}'></image>
          </view>
