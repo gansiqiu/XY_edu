@@ -1,16 +1,19 @@
 <!--pages/Myinfo/Myinfo.wxml-->
 <view class="list-wrap">
-   <view class="index_user">
-      <button plain='true' wx:if='{{shouquan == 0}}' class='userinfo_btn' open-type='getUserInfo' bindgetuserinfo='userInfoHandler'></button>
-      <image class='user_icon' wx:if='{{shouquan == 0}}' src='/images/click_author.png'></image>
-      <image class='user_icon' wx:else src="{{headimgurl}}"></image>
-      <view wx:if='{{shouquan == 1}}'>{{nickname}}</view>
-      <view wx:if='{{shouquan == 0}}'>游客用户</view>
-   </view>
+    <view class="index_user">
+        <button plain='true' wx:if='{{shouquan == 0}}' class='userinfo_btn' open-type='getUserInfo' bindgetuserinfo='userInfoHandler'></button>
+        <image class='user_icon' wx:if='{{shouquan == 0}}' src='/images/click_author.png'></image>
+        <image class='user_icon' wx:else src="{{headimgurl}}"></image>
+        <view wx:if='{{shouquan == 1}}'>{{nickname}}</view>
+        <view wx:if='{{shouquan == 0}}'>游客用户</view>
+    </view>
 
-   <view class="list-item">
-      <wxc-list class="item" icon="scan" icon-color="#69A0DD" title="扫一扫" bind:click="scanClick"></wxc-list>
-      <wxc-list class="item" icon="footprint" icon-color="#69A0DD" title="清除缓存" bind:click="clearStorageClick"></wxc-list>
-      <wxc-list class="item" icon="star" icon-color="#69A0DD" title="我的收藏" bind:click="myCollect"></wxc-list>
-   </view>
+    <view class="list-item">
+        <i-cell-group>
+            <i-cell title="扫一扫" bind:click="scanClick"><i-icon slot="icon" size='28' color='#69A0DD' type="scan" /></i-cell>
+            <i-cell title="清除缓存" bind:click="clearStorageClick"><i-icon slot="icon" color='#69A0DD' size='28' type="trash" /></i-cell>
+            <i-cell title="我的收藏" is-link bind:click="myCollect"><i-icon slot="icon" color='#69A0DD' size='28' type="collection"/></i-cell>
+        </i-cell-group>
+    </view>
+
 </view>
